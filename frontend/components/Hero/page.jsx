@@ -18,8 +18,8 @@ export default function page() {
             <h1 className="text-5xl font-bold leading-snug max-md:text-4xl max-md:leading-normal max-md:text-center">
               Create Any Token to Any Chain with{" "}
               <span class=" relative whitespace-nowrap">
-                <span class="ml-3 absolute bg-neutral-content -left-1 -top-1 -bottom-1 -right-5 md:-left-3 md:-top-0 md:-bottom-0 md:-right-3 -rotate-1 "></span>
-                <span class="relative text-accent-content ml-3">One Click</span>
+                <span class="ml-3 max-md:ml-0 absolute bg-neutral-content -left-1 -top-1 -bottom-1 -right-5 md:-left-3 md:-top-0 md:-bottom-0 md:-right-3 -rotate-1 "></span>
+                <span class="relative text-accent-content md:ml-1 ml-3">One Click</span>
               </span>
             </h1>
             <p className="py-6 max-md:text-center">
