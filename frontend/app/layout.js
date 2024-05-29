@@ -5,6 +5,7 @@ import { config } from "@/components/web3/config";
 import { headers } from "next/headers";
 import Web3ModalProvider from "@/components/web3/Web3ModalProvider";
 import Navbar from "@/components/Navbar/Navbar";
+import Footer from "@/components/Footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,8 +21,9 @@ export default function RootLayout({ children }) {
       <link rel="shortcut icon" href="/favicon.ico" />
       <body className={inter.className}>
       <Web3ModalProvider initialState={initialState}>
-      <Navbar />
-        {children}
+        <Navbar />
+          {children}
+        <Footer />
       </Web3ModalProvider>
       </body>
     </html>
