@@ -24,7 +24,7 @@ export default function Chains() {
         Tokenize on leading <span className="text-info">EVM</span> &{" "}
         <span className="text-warning">SVM</span> chains
       </h1>
-      <div className="flex flex-col w-10/12">
+      <div className="flex flex-col w-10/12 max-w-5xl">
         <div className="divider " />
       </div>
       <div className="carousel max-md:h-96 max-md:carousel-vertical max-md:items-center max-md:gap-10 carousel-center max-w-6xl p-4 space-x-4 bg-base-100 rounded-box pb-10">

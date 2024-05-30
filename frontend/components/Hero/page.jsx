@@ -22,9 +22,9 @@ export default function page() {
                 <span class="relative text-accent-content md:ml-1 ml-3">One Click</span>
               </span>
             </h1>
-            <p className="py-6 max-md:text-center">
+            <p className="py-6 max-w-xl max-md:text-center">
               Create any type of token on any blockchain with just one click
-              using tokgen.xyz. Perfect for launching cryptocurrencies, NFTs, or
+              using <b>tokgen.xyz</b>. Perfect for launching cryptocurrencies, NFTs, or
               decentralized apps quickly and effortlessly.
             </p>
             <button className="btn btn-primary max-md:w-full">

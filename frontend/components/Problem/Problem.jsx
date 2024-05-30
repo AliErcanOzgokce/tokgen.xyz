@@ -5,7 +5,7 @@ import down from "@/assets/icons/arrow-down.svg"
 export default function Problem() {
   return (
     <section className="min-h-4/5 flex flex-col items-center py-20">
-      <div data-theme="bumblebee" className="card max-md:w-5/6 w-2/6 p-10  bg-secondary shadow-xl">
+      <div data-theme="bumblebee" className="card max-md:w-5/6 mim-w-80 max-w-lg w-3/6 p-10  bg-secondary shadow-xl">
         <div className="card-body">
           <div className="text-center leading-loose">
             <p>+<span className="font-bold text-red-600"> 6 hrs</span> designing a landing page</p>
