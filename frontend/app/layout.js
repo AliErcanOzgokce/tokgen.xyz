@@ -7,6 +7,7 @@ import Web3ModalProvider from "@/components/web3/Web3ModalProvider";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
 
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
