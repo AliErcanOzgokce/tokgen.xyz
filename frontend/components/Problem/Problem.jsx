@@ -18,7 +18,7 @@ export default function Problem() {
           </div>
         </div>
       </div>
-      <p className="text-sm pt-10 flex flex-row gap-2 items-center"><Image src={down} className="h-fit" height={10} /> There's an better way</p>
+      <p className="text-sm pt-10 flex flex-row gap-2 items-center"><Image src={down} className="h-fit" height={10} /> There is an better way</p>
     </section>
   );
 }
