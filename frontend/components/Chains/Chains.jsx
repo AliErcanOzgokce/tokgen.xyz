@@ -20,7 +20,7 @@ export default function Chains() {
       data-theme="halloween"
       className=" flex flex-col items-center gap-4 py-10"
     >
-      <h1 className="text-3xl max-md:w-4/6 font-bold text-center pt-10">
+      <h1 className="text-4xl max-md:w-5/6 font-bold text-center pt-10">
         Tokenize on leading <span className="text-info">EVM</span> &{" "}
         <span className="text-warning">SVM</span> chains
       </h1>

@@ -11,10 +11,10 @@ export default function Features() {
   return (
     <section className="min-h-96 py-20 bg-base-200 flex flex-col items-center gap-10">
       <div className="flex flex-col gap-6 items-center">
-        <h1 className="text-5xl font-bold">
+        <h1 className="text-5xl font-bold max-md:text-3xl max-md:w-5/6 text-center">
           Unmatched Quality, No Matter Your Choice
         </h1>
-        <p className="max-w-3xl text-center">
+        <p className="max-w-3xl text-center max-md:w-4/5">
           We provide a comprehensive set of features with all our tokens. Every
           token includes these standard features at no additional cost, ensuring
           you receive the highest quality and security from the start.
