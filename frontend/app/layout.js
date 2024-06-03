@@ -6,6 +6,7 @@ import { headers } from "next/headers";
 import Web3ModalProvider from "@/components/web3/Web3ModalProvider";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -24,6 +25,7 @@ export default function RootLayout({ children }) {
       <Web3ModalProvider initialState={initialState}>
         <Navbar />
           {children}
+          <SpeedInsights />
         <Footer />
       </Web3ModalProvider>
       </body>
