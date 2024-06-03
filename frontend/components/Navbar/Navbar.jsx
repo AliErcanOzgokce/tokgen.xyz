@@ -48,7 +48,7 @@ export default function Navbar() {
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl flex flex-row gap-2 items-center justify-center">
+          <a href="/" className="btn btn-ghost text-xl flex flex-row gap-2 items-center justify-center">
             <Image src={icon} height={40} width={40} />
             tokgen.xyz
           </a>
@@ -56,23 +56,16 @@ export default function Navbar() {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <a>Item 1</a>
+              <a href="#features">Features</a>
             </li>
             <li>
-              <details>
-                <summary>Parent</summary>
-                <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
-              </details>
+              <a href="#HowItWorks">How It Works</a>
             </li>
             <li>
-              <a>Item 3</a>
+              <a href="#faq">FAQ</a>
+            </li>
+            <li>
+              <a href="mailto:aliercanozgokce@gmail.com">Support</a>
             </li>
           </ul>
         </div>

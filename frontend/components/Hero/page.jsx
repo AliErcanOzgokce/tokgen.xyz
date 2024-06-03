@@ -27,7 +27,7 @@ export default function page() {
                 </span>
               </span>
             </h1>
-            <p className="py-6 max-w-xl max-md:text-center">
+            <p className="text-base-content/80 py-6 max-w-xl max-md:text-center">
               Create any type of token on any blockchain with just one click
               using <b>tokgen.xyz</b>. Perfect for launching cryptocurrencies,
               NFTs, or decentralized apps quickly and effortlessly.

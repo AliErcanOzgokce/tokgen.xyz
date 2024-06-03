@@ -7,9 +7,9 @@ import deploy from "@/assets/icons/deploy.png";
 
 export default function HowItWorks() {
   return (
-    <section className="flex flex-col items-center pt-20 gap-10">
+    <section className="flex flex-col items-center pt-20 gap-10" id="HowItWorks">
       <h1 className="text-5xl font-bold max-md:text-3xl">How It Works?</h1>
-      <p className="text-md max-w-2xl text-center max-md:text-sm max-md:w-4/5">
+      <p className="text-base-content/80 text-md max-w-2xl text-center max-md:text-sm max-md:w-4/5">
         Create Your Token in One Click. The fastest and most secure way to
         generate your own token, without any compromises!
       </p>
