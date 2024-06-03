@@ -11,7 +11,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "tokgen.xyz",
+  title: "tokgen.xyz | Create Token with One Click",
   description: "Create Token with One Click",
 };
 

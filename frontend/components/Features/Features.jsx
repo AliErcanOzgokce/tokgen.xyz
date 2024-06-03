@@ -10,7 +10,7 @@ import analysis from "@/assets/icons/analysis.png";
 export default function Features() {
   return (
     <section
-      className="min-h-96 py-20 bg-base-200 flex flex-col items-center gap-10"
+      className="min-h-96 py-20 bg-base-200 flex flex-col items-center gap-10 text-base-content"
       id="features"
     >
       <div className="flex flex-col gap-6 items-center">

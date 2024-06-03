@@ -8,7 +8,7 @@ import deploy from "@/assets/icons/deploy.png";
 export default function HowItWorks() {
   return (
     <section
-      className="flex flex-col items-center pt-20 gap-10"
+      className="flex flex-col items-center pt-20 gap-10 text-base-content"
       id="HowItWorks"
     >
       <h1 className="text-5xl font-bold max-md:text-3xl">How It Works?</h1>

@@ -2,7 +2,7 @@ import React from "react";
 
 export default function FAQ() {
   return (
-    <section className="bg-base-300" id="faq">
+    <section className="bg-base-300 text-base-content" id="faq">
       <div className="py-24 px-8 max-w-7xl mx-auto flex flex-row max-md:flex-col  gap-12">
         <div className="flex flex-col text-left basis-1/2 max-md:px-5">
           <p className="sm:text-4xl text-3xl font-extrabold text-base-content mb-8 ">

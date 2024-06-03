@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Navbar() {
   return (
-    <header className="bg-base-100">
+    <header className="bg-base-100 text-base-content">
       <div className="max-w-7xl  mx-auto px-8 py-5 flex items-center navbar bg-base-100">
         <div className="navbar-start ">
           <div className="dropdown">
