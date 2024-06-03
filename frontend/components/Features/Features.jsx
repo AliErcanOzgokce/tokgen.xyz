@@ -20,7 +20,7 @@ export default function Features() {
           you receive the highest quality and security from the start.
         </p>
       </div>
-      <div className=" grid grid-cols-3 gap-5 max-md:grid-cols-1">
+      <div className=" grid grid-cols-3 gap-5 max-lg:grid-cols-2 max-md:grid-cols-1 max-sm:grid-cols-1">
         <div className="card w-96  px-2 py-10 text-center">
           <figure>
             <Image src={objective} height={80} />
