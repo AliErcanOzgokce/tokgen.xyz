@@ -27,7 +27,7 @@ export default function FAQ() {
             </div>
             <div className="collapse-content">
               <p className="font-light text-base-content/80">
-                After your transaction is confirmed, you'll first receive a
+                After your transaction is confirmed, you will first receive a
                 transaction hash. Once fully confirmed, your token address will
                 be provided. If there are network delays, you can track the
                 transaction progress, and your token address will appear on the
@@ -95,7 +95,7 @@ export default function FAQ() {
               <p className="font-light text-base-content/80">
                 Absolutely! Your token will automatically receive a green
                 checkmark verification on block explorers such as Etherscan.
-                There's no extra action needed on your part.
+                There is no extra action needed on your part.
               </p>
             </div>
           </div>

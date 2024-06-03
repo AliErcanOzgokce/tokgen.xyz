@@ -1,11 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import hero from "@/assets/hero.png";
-import richerd from "@/assets/richerd.jpg";
-import nft from "@/assets/nft.jpeg";
-import ape from "@/assets/ape_yacht.jpg";
 
 export default function page() {
+
   return (
     <section className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-center gap-16 lg:gap-20 lg:items-start px-8 py-8 lg:py-20">
       <div className="hero min-h-4/5 bg-base-100">
@@ -16,6 +13,7 @@ export default function page() {
             width={0}
             height={0}
             sizes="100vw"
+            alt="Ethereum + Binance + Solana + Optimum + Avalanche + Arbitrum + Polygon + Base = tokgen.xyz"
           />
           <div>
             <h1 className="text-5xl font-bold leading-snug max-md:text-4xl max-md:leading-normal max-md:text-center">
@@ -39,17 +37,35 @@ export default function page() {
               <div className="avatar-group -space-x-6 rtl:space-x-reverse ">
                 <div className="avatar">
                   <div className="w-12">
-                    <Image src={richerd} />
+                    <Image
+                      src="https://s3.eu-north-1.amazonaws.com/tokgen.xyz/assets/richerd.jpg"
+                      width={0}
+                      height={0}
+                      sizes="100vw"
+                      alt="richard-nft"
+                    />
                   </div>
                 </div>
                 <div className="avatar">
                   <div className="w-12">
-                    <Image src={nft} />
+                    <Image
+                      src="https://s3.eu-north-1.amazonaws.com/tokgen.xyz/assets/nft.jpeg"
+                      width={0}
+                      height={0}
+                      sizes="100vw"
+                      alt="nft"
+                    />
                   </div>
                 </div>
                 <div className="avatar">
                   <div className="w-12">
-                    <Image src={ape} />
+                    <Image
+                      src="https://s3.eu-north-1.amazonaws.com/tokgen.xyz/assets/ape_yacht.jpg"
+                      width={0}
+                      height={0}
+                      sizes="100vw"
+                      alt="ape-yacht-club-nft"
+                    />
                   </div>
                 </div>
                 <div className="avatar placeholder">

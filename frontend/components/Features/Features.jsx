@@ -1,15 +1,18 @@
 import React from "react";
 import Image from "next/image";
-import objective from "@/assets/icons/objective.png"
-import handshake from "@/assets/icons/handshake.png"
-import key from "@/assets/icons/key.png"
-import open_book from "@/assets/icons/open-book.png"
-import vision from "@/assets/icons/vision.png"
-import analysis from "@/assets/icons/analysis.png"
+import objective from "@/assets/icons/objective.png";
+import handshake from "@/assets/icons/handshake.png";
+import key from "@/assets/icons/key.png";
+import open_book from "@/assets/icons/open-book.png";
+import vision from "@/assets/icons/vision.png";
+import analysis from "@/assets/icons/analysis.png";
 
 export default function Features() {
   return (
-    <section className="min-h-96 py-20 bg-base-200 flex flex-col items-center gap-10" id="features">
+    <section
+      className="min-h-96 py-20 bg-base-200 flex flex-col items-center gap-10"
+      id="features"
+    >
       <div className="flex flex-col gap-6 items-center">
         <h1 className="text-5xl font-bold max-md:text-3xl max-md:w-5/6 text-center">
           Unmatched Quality, No Matter Your Choice
@@ -23,7 +26,12 @@ export default function Features() {
       <div className=" grid grid-cols-3 gap-5 max-lg:grid-cols-2 max-md:grid-cols-1 max-sm:grid-cols-1">
         <div className="card w-96  px-2 py-10 text-center">
           <figure>
-            <Image src={objective} height={80} />
+            <Image
+              src="https://s3.eu-north-1.amazonaws.com/tokgen.xyz/assets/icons/objective.png"
+              height={80}
+              width={80}
+              alt="fully_spec_complaint"
+            />
           </figure>
           <div className="card-body items-center">
             <h3 className="text-sm text-success">Fully Spec Compliant</h3>
@@ -38,7 +46,12 @@ export default function Features() {
         </div>
         <div className="card w-96  px-2 py-10 text-center">
           <figure>
-            <Image src={key} height={80} />
+            <Image
+              src="https://s3.eu-north-1.amazonaws.com/tokgen.xyz/assets/icons/key.png"
+              height={80}
+              width={80}
+              alt="security_audited"
+            />
           </figure>
           <div className="card-body items-center">
             <h3 className="text-sm text-success">Thoroughly Audited</h3>
@@ -53,7 +66,12 @@ export default function Features() {
         </div>
         <div className="card w-96  px-2 py-10 text-center">
           <figure>
-            <Image src={open_book} height={80} />
+            <Image
+              src="https://s3.eu-north-1.amazonaws.com/tokgen.xyz/assets/icons/open-book.png"
+              height={80}
+              width={80}
+              alt="security_standard"
+            />
           </figure>
           <div className="card-body items-center">
             <h3 className="text-sm text-success">
@@ -70,7 +88,12 @@ export default function Features() {
         </div>
         <div className="card w-96  px-2 py-10 text-center">
           <figure>
-            <Image src={analysis} height={80} />
+            <Image
+              src="https://s3.eu-north-1.amazonaws.com/tokgen.xyz/assets/icons/analysis.png"
+              height={80}
+              width={80}
+              alt="pre_verified"
+            />
           </figure>
           <div className="card-body items-center">
             <h3 className="text-sm text-success">Pre-Verified Source Code</h3>
@@ -85,7 +108,12 @@ export default function Features() {
         </div>
         <div className="card w-96 items-center px-2 py-10 text-center">
           <figure className="rounded-none">
-            <Image src={vision} height={80} />
+            <Image
+              src="https://s3.eu-north-1.amazonaws.com/tokgen.xyz/assets/icons/vision.png"
+              height={80}
+              width={80}
+              alt="access-control"
+            />
           </figure>
           <div className="card-body items-center">
             <h3 className="text-sm text-success">Advanced Access Control</h3>
@@ -100,7 +128,12 @@ export default function Features() {
         </div>
         <div className="card w-96  px-2 py-10 text-center">
           <figure>
-            <Image src={handshake} height={80} />
+            <Image
+              src="https://s3.eu-north-1.amazonaws.com/tokgen.xyz/assets/icons/handshake.png"
+              height={80}
+              width={80}
+              alt="trust_confidence"
+            />
           </figure>
           <div className="card-body items-center">
             <h3 className="text-sm text-success">Proven Trust & Confidence</h3>

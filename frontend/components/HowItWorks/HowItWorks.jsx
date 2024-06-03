@@ -7,7 +7,10 @@ import deploy from "@/assets/icons/deploy.png";
 
 export default function HowItWorks() {
   return (
-    <section className="flex flex-col items-center pt-20 gap-10" id="HowItWorks">
+    <section
+      className="flex flex-col items-center pt-20 gap-10"
+      id="HowItWorks"
+    >
       <h1 className="text-5xl font-bold max-md:text-3xl">How It Works?</h1>
       <p className="text-base-content/80 text-md max-w-2xl text-center max-md:text-sm max-md:w-4/5">
         Create Your Token in One Click. The fastest and most secure way to
@@ -17,7 +20,12 @@ export default function HowItWorks() {
         <li>
           <div className="timeline-start mb-10 max-w-xs timeline-box border-primary flex flex-col gap-5 py-10 px-5 justify-center text-center">
             <div className="w-full flex justify-center">
-              <Image src={wallet} height={80} />
+              <Image
+                src="https://s3.eu-north-1.amazonaws.com/tokgen.xyz/assets/icons/wallet.png"
+                height={80}
+                width={80}
+                alt="connect_wallet"
+              />
             </div>
             <div className="text-lg font-black">Connect Your Wallet</div>
             Easily connect any supported wallet to our platform to start
@@ -57,7 +65,12 @@ export default function HowItWorks() {
           </div>
           <div className="timeline-start mb-10 max-w-xs timeline-box border-primary flex flex-col gap-5 py-10 px-5 justify-center text-center">
             <div className="w-full flex justify-center">
-              <Image src={token} height={80} />
+              <Image
+                src="https://s3.eu-north-1.amazonaws.com/tokgen.xyz/assets/icons/token.png"
+                height={80}
+                width={80}
+                alt="token_details"
+              />
             </div>
             <div className="text-lg font-black">Enter Token Details</div>
             Provide essential details for your token, including its name,
@@ -69,7 +82,12 @@ export default function HowItWorks() {
           <hr className="bg-primary" />
           <div className="timeline-start mb-10 max-w-xs timeline-box border-primary flex flex-col gap-5 py-10 px-5 justify-center text-center">
             <div className="w-full flex justify-center">
-              <Image src={choice} height={80} />
+              <Image
+                src="https://s3.eu-north-1.amazonaws.com/tokgen.xyz/assets/icons/choice.png"
+                height={80}
+                width={80}
+                alt="choice_feature"
+              />
             </div>
             <div className="text-lg font-black">Choose Additional Features</div>
             Customize your token by selecting from a wide range of features like
@@ -109,7 +127,12 @@ export default function HowItWorks() {
           </div>
           <div className="timeline-start mb-10 max-w-xs timeline-box border-primary flex flex-col gap-5 py-10 px-5 justify-center text-center">
             <div className="w-full flex justify-center">
-              <Image src={deploy} height={80} />
+              <Image
+                src="https://s3.eu-north-1.amazonaws.com/tokgen.xyz/assets/icons/deploy.png"
+                height={80}
+                width={80}
+                alt="deploy_token"
+              />
             </div>
             <div className="text-lg font-black">Deploy Your Token</div>
             Deploy your token to the blockchain ecosystem, making it instantly
@@ -121,7 +144,12 @@ export default function HowItWorks() {
         <li className="step step-primary">
           <div className=" mb-10 max-w-xs timeline-box border-primary flex flex-col gap-5 py-10 px-5 justify-center text-center">
             <div className="w-full flex justify-center">
-              <Image src={wallet} height={80} />
+              <Image
+                src="https://s3.eu-north-1.amazonaws.com/tokgen.xyz/assets/icons/wallet.png"
+                height={80}
+                width={80}
+                alt="connect_wallet"
+              />
             </div>
             <div className="text-lg font-black">Connect Your Wallet</div>
             Easily connect any supported wallet to our platform to start
@@ -131,29 +159,48 @@ export default function HowItWorks() {
         <li className="step step-primary">
           <div className=" mb-10 max-w-xs timeline-box border-primary flex flex-col gap-5 py-10 px-5 justify-center text-center">
             <div className="w-full flex justify-center">
-              <Image src={token} height={80} />
+              <Image
+                src="https://s3.eu-north-1.amazonaws.com/tokgen.xyz/assets/icons/token.png"
+                height={80}
+                width={80}
+                alt="token_details"
+              />
             </div>
             <div className="text-lg font-black">Enter Token Details</div>
             Provide essential details for your token, including its name,
             symbol, decimals, and total supply.
           </div>
         </li>
-        <li className="step"><div className="mb-10 max-w-xs timeline-box border-primary flex flex-col gap-5 py-10 px-5 justify-center text-center">
+        <li className="step">
+          <div className="mb-10 max-w-xs timeline-box border-primary flex flex-col gap-5 py-10 px-5 justify-center text-center">
             <div className="w-full flex justify-center">
-              <Image src={choice} height={80} />
+              <Image
+                src="https://s3.eu-north-1.amazonaws.com/tokgen.xyz/assets/icons/choice.png"
+                height={80}
+                width={80}
+                alt="choice_feature"
+              />
             </div>
             <div className="text-lg font-black">Choose Additional Features</div>
             Customize your token by selecting from a wide range of features like
             minting, burning, taxes, and more.
-          </div></li>
-        <li className="step"><div className="mb-10 max-w-xs timeline-box border-primary flex flex-col gap-5 py-10 px-5 justify-center text-center">
+          </div>
+        </li>
+        <li className="step">
+          <div className="mb-10 max-w-xs timeline-box border-primary flex flex-col gap-5 py-10 px-5 justify-center text-center">
             <div className="w-full flex justify-center">
-              <Image src={deploy} height={80} />
+              <Image
+                src="https://s3.eu-north-1.amazonaws.com/tokgen.xyz/assets/icons/deploy.png"
+                height={80}
+                width={80}
+                alt="deploy_token"
+              />
             </div>
             <div className="text-lg font-black">Deploy Your Token</div>
             Deploy your token to the blockchain ecosystem, making it instantly
             available for use across the network.
-          </div></li>
+          </div>
+        </li>
       </ul>
     </section>
   );

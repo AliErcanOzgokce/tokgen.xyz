@@ -30,26 +30,24 @@ export default function Navbar() {
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-                <a>Item 1</a>
+                <a href="#features">Features</a>
               </li>
               <li>
-                <a>Parent</a>
-                <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
+                <a href="#HowItWorks">How It Works</a>
               </li>
               <li>
-                <a>Item 3</a>
+                <a href="#faq">FAQ</a>
+              </li>
+              <li>
+                <a href="mailto:aliercanozgokce@gmail.com">Support</a>
               </li>
             </ul>
           </div>
-          <a href="/" className="btn btn-ghost text-xl flex flex-row gap-2 items-center justify-center">
-            <Image src={icon} height={40} width={40} />
+          <a
+            href="/"
+            className="btn btn-ghost text-xl flex flex-row gap-2 items-center justify-center"
+          >
+            <Image src={icon} height={40} width={40} alt="tokgen_xyz_icon" />
             tokgen.xyz
           </a>
         </div>
