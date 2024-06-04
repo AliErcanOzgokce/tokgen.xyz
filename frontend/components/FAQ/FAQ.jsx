@@ -10,7 +10,7 @@ export default function FAQ() {
           </p>
           <div className="text-base-content/80">
             Have another question? Contact me on{" "}
-            <a className="link hover:link-primary" href="https://x.com/Michelangelo072">
+            <a className="link hover:link-primary" href="https://x.com/aeoWeb3">
               Twitter
             </a>{" "}
             or by{" "}
