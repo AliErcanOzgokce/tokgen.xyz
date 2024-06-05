@@ -17,7 +17,7 @@ const nextConfig = {
         has: [
           {
             type: "host",
-            value: "app.tokgen.xyz",
+            value: "app.localhost:3000",
           },
         ],
         destination: "/app",
