@@ -21,8 +21,7 @@ export default function RootLayout({ children }) {
       <link rel="shortcut icon" href="/favicon.ico" />
       <body className={inter.className}>
         <Web3ModalProvider initialState={initialState}>
-        <Sidebar />
-          {children}
+          <Sidebar>{children}</Sidebar>
           <SpeedInsights />
         </Web3ModalProvider>
       </body>
