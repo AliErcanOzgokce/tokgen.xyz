@@ -26,13 +26,31 @@ export default function Sidebar({ children }) {
           {/* Sidebar content here */}
           <a
             href="/"
-            className="btn btn-ghost text-xl flex flex-row gap-2 items-center justify-center"
+            className="btn btn-ghost text-xl flex flex-row gap-2 items-center justify-start"
           >
             <Image src={icon} height={40} width={40} alt="tokgen_xyz_icon" />
             tokgen.xyz
           </a>
+          <div className="divider my-1"></div> 
           <li>
-            <a></a>
+              <button className="btn flex justify-start">
+                <Image src="https://s3.eu-north-1.amazonaws.com/tokgen.xyz/app.tokgen.xyz/token.png" height={20} width={20} alt="create_token" />
+                Create Token
+              </button>
+          </li>
+          <li>
+              <button className="btn flex justify-start">
+              <Image src="https://s3.eu-north-1.amazonaws.com/tokgen.xyz/app.tokgen.xyz/nft.png" height={20} width={20} alt="create_nft_token" />
+
+                Create NFT
+              </button>
+          </li>
+          <li>
+              <button className="btn flex justify-start">
+              <Image src="https://s3.eu-north-1.amazonaws.com/tokgen.xyz/app.tokgen.xyz/multi_token.png" height={20} width={20} alt="create_multi_token" />
+
+                Create Multi Token
+              </button>
           </li>
         </ul>
       </div>
