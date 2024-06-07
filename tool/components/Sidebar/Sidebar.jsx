@@ -8,7 +8,7 @@ export default function Sidebar({ children }) {
     <div className="drawer bg-base-100 lg:drawer-open text-base-content">
       <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content lg:block ">
-        <div className="w-full flex grid grid-cols-3 p-4 lg:hidden">
+        <div className="w-full flex grid grid-cols-3 p-3 lg:hidden">
           <div className="flex-none">
             <label 
             htmlFor="my-drawer-2" className="btn drawer-button btn-square btn-ghost">
@@ -27,7 +27,7 @@ export default function Sidebar({ children }) {
               </svg>
             </label>
           </div>
-          <div>
+          <div className=" flex justify-center">
             <Link href="/" className="btn btn-ghost text-xl ">
               <div className="flex flex-row gap-2 items-center justify-center">
                 <Image
