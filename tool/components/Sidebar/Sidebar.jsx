@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import icon from "@/app/icon.svg";
 import Link from "next/link";
+import GasPrice from "./GasPrice/GasPrice";
 
 export default function Sidebar({ children }) {
   return (
@@ -42,6 +43,7 @@ export default function Sidebar({ children }) {
           </div>
         </div>
         {/* lg'den küçük ekranlarda gizle, büyük ekranlarda göster */}
+        <GasPrice />
         {children}
       </div>
       <div className="drawer-side">
