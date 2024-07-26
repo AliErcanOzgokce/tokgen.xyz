@@ -96,7 +96,7 @@ const GasPrice = () => {
   };
 
   return (
-    <div className="p-3 flex justify-between gap-4">
+    <div className="p-3 flex justify-between gap-4 text-base-content">
       <div className=" flex gap-3">
         <Image
           src={`https://s3.eu-north-1.amazonaws.com/tokgen.xyz/app.tokgen.xyz/${selectedChainName}.svg`}
@@ -105,6 +105,7 @@ const GasPrice = () => {
           alt={`${selectedChainName}_logo`}
         />
         <select
+        data-theme="halloween"
           className="bg-gradient-to-tl from-secondary to-primary border-gray-300 rounded py-2 px-4 text-white appearance-none font-bold shadow-lg"
           value={selectedChainName}
           onChange={handleChainChange}
@@ -124,7 +125,7 @@ const GasPrice = () => {
       <div className="flex gap-4">
         <div className="grid grid-cols-3 gap-4">
           <div className="p-4 rounded text-center flex flex-row gap-3 bg-gradient-to-tl from-base-100 to-base-300 shadow-lg">
-            <p className="text-white font-semibold">🐢 Standart</p>
+            <p className="text-base-content font-semibold">🐢 Standart</p>
             <p className="text-green-500 font-bold">
               {loading ? (
                 <span className="loading loading-dots loading-sm"></span>
@@ -134,7 +135,7 @@ const GasPrice = () => {
             </p>
           </div>
           <div className="p-4 rounded text-center flex flex-row gap-3 bg-gradient-to-tl from-base-100 to-base-300 shadow-lg">
-            <p className="text-white font-semibold">🐇 Average</p>
+            <p className="text-base-content font-semibold">🐇 Average</p>
             <p className="text-yellow-500 font-bold">
               {loading ? (
                 <span className="loading loading-dots loading-sm"></span>
@@ -144,7 +145,7 @@ const GasPrice = () => {
             </p>
           </div>
           <div className="p-4 rounded text-center flex flex-row gap-3 bg-gradient-to-tl from-base-100 to-base-300 shadow-lg">
-            <p className="text-white font-semibold">🐆 Rapid</p>
+            <p className="text-base-content font-semibold">🐆 Rapid</p>
             <p className="text-red-500 font-bold">
               {loading ? (
                 <span className="loading loading-dots loading-sm"></span>
@@ -154,7 +155,7 @@ const GasPrice = () => {
             </p>
           </div>
         </div>
-        <div className="bg-gradient-to-tl from-base-100 to-base-300 shadow-lg text-white p-4 rounded flex gap-2">
+        <div className="bg-gradient-to-tl from-base-100 to-base-300 shadow-lg text-base-content p-4 rounded flex gap-2">
           <p className="font-semibold">Network Status:</p>
           <p className={getNetworkStatusColor()}>
             {loading ? (

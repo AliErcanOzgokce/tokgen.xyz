@@ -1,8 +1,10 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import icon from "@/app/icon.svg";
 import Link from "next/link";
 import GasPrice from "./GasPrice/GasPrice";
+import { TickerTape } from "react-tradingview-embed";
 
 export default function Sidebar({ children }) {
   return (
@@ -11,8 +13,10 @@ export default function Sidebar({ children }) {
       <div className="drawer-content lg:block ">
         <div className="w-full flex grid grid-cols-3 p-3 lg:hidden">
           <div className="flex-none">
-            <label 
-            htmlFor="my-drawer-2" className="btn drawer-button btn-square btn-ghost">
+            <label
+              htmlFor="my-drawer-2"
+              className="btn drawer-button btn-square btn-ghost"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -43,6 +47,49 @@ export default function Sidebar({ children }) {
           </div>
         </div>
         {/* lg'den küçük ekranlarda gizle, büyük ekranlarda göster */}
+        <TickerTape
+          widgetProps={{
+            showSymbolLogo: true,
+            isTransparent: false,
+            colorTheme: "dark",
+            displayMode: "regular",
+            locale: "en",
+            symbols: [
+              {
+                proName: "BINANCE:ETHUSDT",
+                title: "ETH/USD",
+              },
+              {
+                proName: "BINANCE:BNBUSDT",
+                title: "BNB/USD",
+              },
+              {
+                proName: "KUCOIN:MATICUSDT",
+                title: "MATIC/USD",
+              },
+              {
+                proName: "KUCOIN:ARBUSDT",
+                title: "ARB/USD",
+              },
+              {
+                proName: "KUCOIN:AVAXUSDT",
+                title: "AVAX/USD",
+              },
+              {
+                proName: "KUCOIN:FTMUSDT",
+                title: "FTM/USD",
+              },
+              {
+                proName: "KUCOIN:OPUSDT",
+                title: "OP/USD",
+              },
+              {
+                proName: "MEXC:BLASTUSDT",
+                title: "BLAST/USD",
+              },
+            ],
+          }}
+        />
         <GasPrice />
         {children}
       </div>
