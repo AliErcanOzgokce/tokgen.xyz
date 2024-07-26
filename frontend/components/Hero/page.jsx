@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function page() {
 
@@ -31,7 +32,9 @@ export default function page() {
               NFTs, or decentralized apps quickly and effortlessly.
             </p>
             <button className="btn btn-primary max-md:w-full">
+            <Link href="https://app.tokgen.xyz">
               Get Started
+            </Link>
             </button>
             <div className="flex flex-row gap-5 items-center pt-10">
               <div className="avatar-group -space-x-6 rtl:space-x-reverse ">
