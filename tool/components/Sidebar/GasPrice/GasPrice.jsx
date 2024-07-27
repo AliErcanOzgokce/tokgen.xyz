@@ -169,7 +169,7 @@ const GasPrice = () => {
             ) : networkStatus < 0.3 ? (
               "Low"
             ) : networkStatus < 0.65 ? (
-              "Medium"
+              "Mid"
             ) : (
               "Busy"
             )}
