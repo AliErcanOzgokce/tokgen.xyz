@@ -21,7 +21,7 @@ contract TokgenERC20MintableBurnablePausablePermitFlashMintOwnable is
         address initialOwner,
         string memory name,
         string memory symbol,
-        uint8 premint
+        uint256 premint
     ) ERC20(name, symbol) Ownable(initialOwner) ERC20Permit(name) {
         _mint(msg.sender, premint * 10 ** decimals());
     }

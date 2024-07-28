@@ -10,7 +10,7 @@ contract TokgenERC20FlashMintOwnable is ERC20, Ownable {
         address initialOwner,
         string memory name,
         string memory symbol,
-        uint8 premint
+        uint256 premint
     ) ERC20(name, symbol) Ownable(initialOwner) {
         _mint(msg.sender, premint * 10 ** decimals());
     }
