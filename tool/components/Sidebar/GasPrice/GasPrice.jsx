@@ -50,7 +50,7 @@ const GasPrice = () => {
       case "ethereum":
         setSelectedChain("1");
         break;
-      case "bnb":
+      case "binance":
         setSelectedChain("56");
         break;
       case "polygon":
@@ -111,7 +111,7 @@ const GasPrice = () => {
           onChange={handleChainChange}
         >
           <option value="ethereum">Ethereum</option>
-          <option value="bnb">Binance Smart Chain</option>
+          <option value="binance">Binance Smart Chain</option>
           <option value="polygon">Polygon</option>
           <option value="arbitrum">Arbitrum</option>
           <option value="avalanche">Avalanche</option>

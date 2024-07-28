@@ -1,0 +1,15 @@
+{
+  "name": "tokgen.xyz",
+  "version": "1.0.0",
+  "description": "Create any token to any chain with one click",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && node server.js",
+    "client": "cd tool && npm run dev"
+  },
+  "author": "Ali Ercan Ozgokce",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
