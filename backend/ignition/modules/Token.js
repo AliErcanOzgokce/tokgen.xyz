@@ -2,7 +2,7 @@
   const { buildModule } = require("@nomicfoundation/hardhat-ignition/modules");
   
   module.exports = buildModule("TokenModule", (m) => {
-      const token = m.contract("TokgenERC20MintableBurnableOwnable", ["0xf1bb52640B43c157Bb429EB4d1F0F7Ae4e58f427", "HarunS", "HRNS", 1000000]);
+      const token = m.contract("TokgenERC20MintableBurnableOwnable", ["0xF6F2336D394c1AD1C71D935Eb77016B5Ac5734b5", "Gülme Sakın", "ALLAH", 1000000000]);
       return { token };
   });
   
