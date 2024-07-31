@@ -9,13 +9,13 @@ import {
   connect,
   getChainId,
   switchChain,
-  getAccount
+  getAccount,
 } from "@wagmi/core";
 import { mainnet, sepolia } from "@wagmi/core/chains";
 import { parseEther } from "viem";
 import { config } from "./config";
 import { injected } from "@wagmi/connectors";
-import {toast} from "react-hot-toast";
+import { toast } from "react-hot-toast";
 
 function page() {
   const [name, setName] = useState("");
@@ -35,6 +35,7 @@ function page() {
   const handleCreate = async (e) => {
     e.preventDefault();
     toast.loading("Creating Token ...");
+    setLoading(true);
 
     try {
       const _connect = await connect(config, { connector: injected() });
@@ -52,12 +53,12 @@ function page() {
         value: parseEther("0.00001"),
       });
 
-      toast.dismiss()
+      toast.dismiss();
       toast.loading("Deposit Successfull ...");
       console.log("Transaction sent:", result);
 
       const address = getAccount(config);
-      console.log(address)
+      console.log(address);
 
       const features = [];
       if (mintable) features.push("Mintable");
@@ -75,7 +76,7 @@ function page() {
         chain: selectedChain.name, // Use the selected chain
       });
 
-      toast.dismiss()
+      toast.dismiss();
       toast.loading("Deploying Contract, It Can Take a While, Please Wait ...");
 
       const response = await axios.post("http://localhost:3001/api/deploy", {
@@ -87,14 +88,32 @@ function page() {
         chain: selectedChain.name, // Use the selected chain
       });
 
-      toast.dismiss()
+      toast.dismiss();
       toast.success("Token Created Successfully: ");
       setTokenAddress(response.data.address);
       setIsCreated(true);
+      setLoading(false);
+      setName("");
+      setSymbol("");
+      setMintAmount("");
+      setMintable(false);
+      setBurnable(false);
+      setPausable(false);
+      setPermit(true);
+      setFlashMinting(false);
 
       console.log("Contract deployed:", response.data);
     } catch (error) {
-      toast.dismiss()
+      toast.dismiss();
+      setName("");
+      setSymbol("");
+      setMintAmount("");
+      setMintable(false);
+      setBurnable(false);
+      setPausable(false);
+      setPermit(true);
+      setFlashMinting(false);
+      setLoading(false);
       toast.error("Error deploying contract: ", error);
       console.error("Error deploying contract:", error);
     }
@@ -230,9 +249,16 @@ function page() {
             <p className=" whitespace-nowrap">Flash Minting</p>
           </div>
         </div>
-        <button type="submit" className="btn btn-lg btn-primary mt-12">
-          Create Token
-        </button>
+        {loading ? (
+          <button className="btn btn-lg btn-primary mt-12">
+            <span className="loading loading-spinner"></span>
+            Please Wait
+          </button>
+        ) : (
+          <button type="submit" className="btn btn-lg btn-primary mt-12">
+            Create Token
+          </button>
+        )}
       </form>
     </div>
   );
