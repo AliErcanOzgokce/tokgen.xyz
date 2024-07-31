@@ -16,6 +16,7 @@ import { parseEther } from "viem";
 import { config } from "./config";
 import { injected } from "@wagmi/connectors";
 import { toast } from "react-hot-toast";
+import Image from "next/image";
 
 function page() {
   const [name, setName] = useState("");
@@ -119,13 +120,15 @@ function page() {
     }
   };
 
-  if (isCreated) {
+  if (!isCreated) {
     return (
-      <div className="p-12 flex flex-col items-center ">
+      <div className="p-20 flex flex-col items-center ">
+      <Image src="https://s3.eu-north-1.amazonaws.com/tokgen.xyz/app.tokgen.xyz/verified.png" width={100} height={100} className="mb-10"/>
         <h1 className="text-3xl font-bold">Token Created Successfully!</h1>
         <p className="text-xl font-semibold mt-4">
           Token Address: {tokenAddress}
         </p>
+        <button className="btn btn-primary mt-20">Add To Your Wallet</button>
       </div>
     );
   }

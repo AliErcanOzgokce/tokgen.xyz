@@ -1,6 +1,7 @@
 const { spawn } = require("child_process");
 const { error } = require("console");
 const fs = require("fs");
+const { ethers } = require("hardhat");
 const path = require("path");
 
 // Function to deploy contract
@@ -92,6 +93,7 @@ function deployContract(features, address, name, symbol, premint, chain) {
           const contractAddress = addressMatch[1];
           console.log(`Contract deployed at: ${contractAddress}`);
           resolve(contractAddress);
+          
         } else {
           const errorMessage = "Could not find contract address in output.";
           console.log(errorMessage);
