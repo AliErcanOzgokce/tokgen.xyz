@@ -126,7 +126,7 @@ function page() {
     }
   };
 
-  if (!isCreated) {
+  if (isCreated) {
     return (
       <div className="p-20 flex flex-col items-center ">
         <Image
@@ -143,7 +143,7 @@ function page() {
           </Link>
         </p>
         <button className="btn btn-primary mt-20">
-          <Link href="/manage_token">Manage Your Token</Link>
+          <Link href="/manage_token">Create Another Token</Link>
         </button>
       </div>
     );
