@@ -2,9 +2,9 @@
 "use client";
 
 import React, { useState, useEffect, useContext } from "react";
-import getGasPrice from "@/app/lib/getGasPrice";
+import getGasPrice from "@/lib/getGasPrice";
 import Image from "next/image";
-import { useChain } from "@/app/lib/ChainContext"; // Ensure this import is correct
+import { useChain } from "@/lib/ChainContext"; // Ensure this import is correct
 
 // Define network names
 const networkNames = [

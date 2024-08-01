@@ -6,7 +6,7 @@ import { headers } from "next/headers";
 import Web3ModalProvider from "@/components/web3/Web3ModalProvider";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Sidebar from "@/components/Sidebar/Sidebar";
-import { ChainProvider } from "@/app/lib/ChainContext";
+import { ChainProvider } from "@/lib/ChainContext";
 import { Toaster } from "react-hot-toast";
 
 const inter = Inter({ subsets: ["latin"] });

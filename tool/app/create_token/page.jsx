@@ -2,8 +2,8 @@
 "use client";
 import React, { useState } from "react";
 import axios from "axios";
-import { useChain } from "@/app/lib/ChainContext"; // Import the custom hook
-import capitalizeFirstLetter from "../helper/capitalizeFirstLetter";
+import { useChain } from "@/lib/ChainContext"; // Import the custom hook
+import capitalizeFirstLetter from "../../helper/capitalizeFirstLetter";
 import {
   sendTransaction,
   connect,
@@ -17,7 +17,7 @@ import { config } from "./config";
 import { injected } from "@wagmi/connectors";
 import { toast } from "react-hot-toast";
 import Image from "next/image";
-import getExplorerLink from "../helper/getExplorerLink";
+import getExplorerLink from "../../helper/getExplorerLink";
 import Link from "next/link";
 
 function page() {
