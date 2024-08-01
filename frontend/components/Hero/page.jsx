@@ -28,8 +28,7 @@ export default function page() {
             </h1>
             <p className="text-base-content/80 py-6 max-w-xl max-md:text-center">
               Create any type of token on any blockchain with just one click
-              using <b>tokgen.xyz</b>. Perfect for launching cryptocurrencies,
-              NFTs, or decentralized apps quickly and effortlessly.
+              using <b>tokgen.xyz</b>. Perfect for launching tokens or decentralized apps quickly and effortlessly.
             </p>
             <button className="btn btn-primary max-md:w-full">
             <Link href="https://app.tokgen.xyz">

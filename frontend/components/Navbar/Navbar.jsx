@@ -69,7 +69,7 @@ export default function Navbar() {
         </div>
         <div className="navbar-end gap-10">
           <div className="max-md:hidden">
-            <WalletConnectBtn />
+            <a href="app.tokgen.xyz" className="btn btn-primary">Start Creating</a>
           </div>
           <label className="swap swap-rotate">
             {/* this hidden checkbox controls the state */}
