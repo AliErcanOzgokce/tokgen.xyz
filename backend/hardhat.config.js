@@ -61,6 +61,13 @@ module.exports = {
         "0x61b115a4e9e5c5906f53bb0150d80be67db5f598c1fc539517ec87c355004286",
       ],
     },
+    binance: {
+      // Tested
+      url: "https://bsc-testnet.infura.io/v3/c6f973393b1943528ef758d8a9e877ec",
+      accounts: [
+        "0x61b115a4e9e5c5906f53bb0150d80be67db5f598c1fc539517ec87c355004286",
+      ],
+    },
     // ALCHEMY
     base: {
       // Tested
@@ -83,13 +90,6 @@ module.exports = {
         "0x61b115a4e9e5c5906f53bb0150d80be67db5f598c1fc539517ec87c355004286",
       ],
     },
-    // OTHER
-    binance: {
-      // Tested
-      url: "https://rpc.ankr.com/bsc_testnet_chapel",
-      accounts: [
-        "0x61b115a4e9e5c5906f53bb0150d80be67db5f598c1fc539517ec87c355004286",
-      ],
-    },
+    
   },
 };
