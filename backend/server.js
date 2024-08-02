@@ -10,7 +10,7 @@ app.use(express.json());
 
 // Define API endpoint for deploying contract
 app.post("/api/deploy", async (req, res) => {
-  const { features, address, name, symbol, premint, chain } = req.body;
+  const { features, address, name, symbol, premint, chain, chainId } = req.body;
 
   try {
     const contractAddress = await deployContract(
@@ -19,7 +19,8 @@ app.post("/api/deploy", async (req, res) => {
       name,
       symbol,
       premint,
-      chain
+      chain,
+      chainId
     );
     res.json({ address: contractAddress });
   } catch (error) {
