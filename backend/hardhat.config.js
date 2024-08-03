@@ -6,72 +6,73 @@ module.exports = {
   solidity: "0.8.24",
   networks: {
     // INFURA
-    sepolia: {
-      // Tested
-      url: "https://sepolia.infura.io/v3/c6f973393b1943528ef758d8a9e877ec",
-      accounts: [
-        process.env.PRIVATE_KEY,
-      ],
-    },
+    // FOR TESTING PURPOSES
+    // sepolia: {
+    //   // Tested
+    //   url: "https://sepolia.infura.io/v3/c6f973393b1943528ef758d8a9e877ec",
+    //   accounts: [
+    //     process.env.PRIVATE_KEY,
+    //   ],
+    // },
     ethereum: {
       // Tested
-      url: "https://sepolia.infura.io/v3/c6f973393b1943528ef758d8a9e877ec",
+      url: `https://mainnet.infura.io/v3/${process.env.INFURA_KEY}`,
       accounts: [
         process.env.PRIVATE_KEY,
       ],
     },
     linea: {
       // Tested
-      url: "https://linea-sepolia.infura.io/v3/c6f973393b1943528ef758d8a9e877ec",
+      url: `https://linea-mainnet.infura.io/v3/${process.env.INFURA_KEY}`,
       accounts: [
         process.env.PRIVATE_KEY,
       ],
     },
     avalanche: {
       // Tested
-      url: "https://avalanche-fuji.infura.io/v3/c6f973393b1943528ef758d8a9e877ec",
+      url: `https://avalanche-mainnet.infura.io/v3/${process.env.INFURA_KEY}`,
       accounts: [
         process.env.PRIVATE_KEY,
       ],
     },
     polygon: {
       // Tested
-      url: "https://polygon-amoy.infura.io/v3/c6f973393b1943528ef758d8a9e877ec",
+      url: `https://polygon-mainnet.infura.io/v3/${process.env.INFURA_KEY}`,
       accounts: [
         process.env.PRIVATE_KEY,
       ],
     },
     blast: {
       // Tested
-      url: "https://blast-sepolia.infura.io/v3/c6f973393b1943528ef758d8a9e877ec",
+      url: `https://blast-mainnet.infura.io/v3/${process.env.INFURA_KEY}`,
       accounts: [
         process.env.PRIVATE_KEY,
       ],
     },
     optimism: {
       // Tested
-      url: "https://optimism-sepolia.infura.io/v3/c6f973393b1943528ef758d8a9e877ec",
+      url: `https://optimism-mainnet.infura.io/v3/${process.env.INFURA_KEY}`,
       accounts: [
         process.env.PRIVATE_KEY,
       ],
     },
     arbitrum: {
       // Tested
-      url: "https://arbitrum-mainnet.infura.io/v3/c6f973393b1943528ef758d8a9e877ec",
+      url: `https://arbitrum-mainnet.infura.io/v3/${process.env.INFURA_KEY}`,
       accounts: [
         process.env.PRIVATE_KEY,
       ],
     },
     celo: {
       // Tested
-      url: "https://celo-alfajores.infura.io/v3/c6f973393b1943528ef758d8a9e877ec",
+      url: `https://celo-mainnet.infura.io/v3/${process.env.INFURA_KEY}`,
       accounts: [
         process.env.PRIVATE_KEY,
       ],
     },
     binance: {
       // Tested
-      url: "https://bsc-testnet.infura.io/v3/c6f973393b1943528ef758d8a9e877ec",
+      url: `https://bsc-mainnet.infura.io/v3/${process.env.INFURA_KEY}`,
       accounts: [
         process.env.PRIVATE_KEY,
       ],
@@ -79,21 +80,21 @@ module.exports = {
     // ALCHEMY
     base: {
       // Tested
-      url: "https://base-sepolia.g.alchemy.com/v2/CsglrjoDtp4Zh507nMrgR8u-XXv3vb7W",
+      url: `https://base-mainnet.g.alchemy.com/v2/${process.env.ALCHEMY_KEY}`,
       accounts: [
         process.env.PRIVATE_KEY,
       ],
     },
     fantom: {
       // Tested
-      url: "https://fantom-testnet.g.alchemy.com/v2/CsglrjoDtp4Zh507nMrgR8u-XXv3vb7W",
+      url: `https://fantom-mainnet.g.alchemy.com/v2/${process.env.ALCHEMY_KEY}`,
       accounts: [
         process.env.PRIVATE_KEY,
       ],
     },
     zetachain: {
       // Tested
-      url: "https://zetachain-testnet.g.alchemy.com/v2/CsglrjoDtp4Zh507nMrgR8u-XXv3vb7W",
+      url: `https://zetachain-mainnet.g.alchemy.com/v2/${process.env.ALCHEMY_KEY}`,
       accounts: [
         process.env.PRIVATE_KEY,
       ],
