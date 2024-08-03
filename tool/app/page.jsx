@@ -21,7 +21,7 @@ import getExplorerLink from "../helper/getExplorerLink";
 import Link from "next/link";
 import icon from "@/app/icon.svg";
 
-function page() {
+function Page() {
   const [name, setName] = useState("");
   const [symbol, setSymbol] = useState("");
   const [mintAmount, setMintAmount] = useState("");
@@ -336,4 +336,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;
