@@ -5,7 +5,8 @@
   "scripts": {
     "start": "concurrently \"npm run server\" \"npm run client\"",
     "server": "cd backend && node server.js",
-    "client": "cd tool && npm run dev"
+    "client": "cd tool && npm run dev",
+    "install": "cd backend && npm install && cd ../tool && npm install"
   },
   "author": "Ali Ercan Ozgokce",
   "license": "ISC",
