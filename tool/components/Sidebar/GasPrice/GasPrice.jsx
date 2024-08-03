@@ -94,6 +94,11 @@ const GasPrice = () => {
     }
   };
 
+  if (window.innerWidth < 768) {
+    // Mobil cihazlar için özel return
+    return ;
+  }
+
   return (
     <div className="p-3 flex justify-between gap-4 text-base-content">
       <div className="flex gap-3">

@@ -7,15 +7,16 @@ import GasPrice from "./GasPrice/GasPrice";
 import { TickerTape } from "react-tradingview-embed";
 
 export default function Sidebar({ children }) {
+  
   return (
     <div className="drawer bg-base-100 lg:drawer-open text-base-content shadow-lg">
       <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
-      <div className="drawer-content lg:block ">
-        <div className="w-full flex grid grid-cols-3 p-3 lg:hidden">
+      <div className="drawer-content lg:block">
+        <div className="w-full flex grid grid-cols-3 p-3 sm:hidden lg:hidden">
           <div className="flex-none">
             <label
               htmlFor="my-drawer-2"
-              className="btn drawer-button btn-square btn-ghost"
+              className="btn drawer-button btn-square btn-ghost hidden"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

@@ -1,6 +1,7 @@
 import { http, createConfig } from '@wagmi/core'
 import { mainnet, sepolia, optimism, arbitrum, avalanche, polygon, base, bsc, fantom, celo, linea, zetachain, blast } from '@wagmi/core/chains'
 
+// Create a config object
 export const config = createConfig({
   chains: [mainnet, sepolia, optimism, arbitrum, avalanche, polygon, base, bsc, fantom, celo, linea, zetachain, blast],
   transports: {

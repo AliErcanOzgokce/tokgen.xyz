@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { useChain } from "@/lib/ChainContext"; // Import the custom hook
-import capitalizeFirstLetter from "../../helper/capitalizeFirstLetter";
+import capitalizeFirstLetter from "../helper/capitalizeFirstLetter";
 import {
   sendTransaction,
   connect,
@@ -11,14 +11,15 @@ import {
   switchChain,
   getAccount,
 } from "@wagmi/core";
-import { mainnet, sepolia } from "@wagmi/core/chains";
+import { sepolia } from "@wagmi/core/chains";
 import { parseEther } from "viem";
 import { config } from "./config";
 import { injected } from "@wagmi/connectors";
 import { toast } from "react-hot-toast";
 import Image from "next/image";
-import getExplorerLink from "../../helper/getExplorerLink";
+import getExplorerLink from "../helper/getExplorerLink";
 import Link from "next/link";
+import icon from "@/app/icon.svg";
 
 function page() {
   const [name, setName] = useState("");
@@ -42,19 +43,23 @@ function page() {
     setLoading(true);
 
     try {
-      const _connect = await connect(config, { connector: injected() });
+      await connect(config, { connector: injected() });
 
       const chainId = getChainId(config);
 
-      // if(chainId !== selectedChain.id) {
-      //   await switchChain(config, { chainId: Number(selectedChain.id) });
-      // }
+      if (chainId !== selectedChain.id) {
+        await switchChain(config, { chainId: Number(selectedChain.id) });
+      }
 
       const result = await sendTransaction(config, {
-        chainId: sepolia.id,
-        // chainId: Number(selectedChain.id),
-        to: "0xB04C2478aA1A246F75413fBcBdEa1fd7bd0804D3",
-        value: parseEther("0.00001"),
+        // FOR TESTING PURPOSES
+        // chainId: sepolia.id,
+        // to: "0xB04C2478aA1A246F75413fBcBdEa1fd7bd0804D3",
+        // value: parseEther("0.00001"),
+        //
+        chainId: Number(selectedChain.id),
+        to: "0xf1bb52640B43c157Bb429EB4d1F0F7Ae4e58f427",
+        value: parseEther("0.1"),
       });
 
       toast.dismiss();
@@ -78,6 +83,7 @@ function page() {
         symbol,
         premint: Number(mintAmount),
         chain: selectedChain.name, // Use the selected chain
+        chainId: selectedChain.id,
       });
 
       toast.dismiss();
@@ -89,7 +95,8 @@ function page() {
         name,
         symbol,
         premint: Number(mintAmount),
-        chain: selectedChain.name, // Use the selected chain
+        chain: selectedChain.name,
+        chainId: selectedChain.id,
       });
 
       toast.dismiss();
@@ -126,6 +133,7 @@ function page() {
     }
   };
 
+  // If the token is created, show the success page
   if (isCreated) {
     return (
       <div className="p-20 flex flex-col items-center ">
@@ -145,6 +153,51 @@ function page() {
         <button className="btn btn-primary mt-20">
           <Link href="/manage_token">Create Another Token</Link>
         </button>
+      </div>
+    );
+  }
+
+  // For Mobile Devices
+  if (window.innerWidth < 768) {
+    // Mobil cihazlar için özel return
+    return (
+      <div className="p-10 flex flex-col gap-10 items-center justify-center text-center min-h-[calc(100svh-110px)]">
+        <p className="text-3xl font-bold text-primary">
+          Please Use a Computer To Create Tokens!
+        </p>
+        <div>
+          <p className="text-md font-semibold  text-base-content/80">
+            Token Generator App
+          </p>
+          <p className="text-md font-semibold mb-4 text-base-content/80">
+            Create Token with One Click
+          </p>
+        </div>
+
+        <div className="flex gap-4">
+          <a
+            href="https://x.com/aeoWeb3"
+            className="btn btn-ghost text-sm flex flex-row  items-center justify-start"
+          >
+            <Image
+              src="https://s3.eu-north-1.amazonaws.com/tokgen.xyz/app.tokgen.xyz/x.png"
+              height={30}
+              width={30}
+              alt="twitter_aeoWeb3"
+            />
+          </a>
+          <a
+            href="https://github.com/aliercanozgokce"
+            className="btn btn-ghost text-sm flex flex-row  items-center justify-start"
+          >
+            <Image
+              src="https://s3.eu-north-1.amazonaws.com/tokgen.xyz/app.tokgen.xyz/github.png"
+              height={30}
+              width={30}
+              alt="github_AliErcanOzgokce"
+            />
+          </a>
+        </div>
       </div>
     );
   }

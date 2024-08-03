@@ -71,16 +71,5 @@ export default function RootLayout({ children }) {
       </Web3ModalProvider>
     </body>
   </html>
-    // <html lang="en">
-    //   <link rel="shortcut icon" href="/favicon.ico" />
-    //   <body className={inter.className}>
-    //     <Web3ModalProvider initialState={initialState}>
-    //       <Sidebar>
-    //         <ChainProvider>{children}</ChainProvider>
-    //       </Sidebar>
-    //       <SpeedInsights />
-    //     </Web3ModalProvider>
-    //   </body>
-    // </html>
   );
 }

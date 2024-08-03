@@ -2,8 +2,8 @@ const ethers = require("ethers");
 
 // Mapping Hardhat network names to Infura supported network names
 const networkMapping = {
-  // ethereum: "mainnet",
-  ethereum: "sepolia",
+  ethereum: "mainnet",
+  sepolia: "sepolia",
   arbitrum: "arbitrum",
   "arbitrum-goerli": "arbitrum-goerli",
   "arbitrum-sepolia": "arbitrum-sepolia",
