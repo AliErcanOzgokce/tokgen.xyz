@@ -80,6 +80,11 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
+### Usage
+https://github.com/user-attachments/assets/ca87683c-49df-442d-b450-c0bbd2e6c6e1
+
+
+
 [![Product Name Screen Shot][product-screenshot]](https://tokgen.xyz)
 
 Create any type of token on any blockchain with just one click using tokgen.xyz. Perfect for launching tokens or decentralized apps quickly and effortlessly. 
